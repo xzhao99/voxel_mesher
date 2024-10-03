@@ -1,0 +1,15 @@
+{
+  "name": "hello-world-test",
+  "version": "1.0.1",
+  "dependencies": [
+    "boost",
+    "fmt",
+    {
+      "name": "pcl",
+      "features": [
+        "vtk"
+      ]
+    },
+    "cgal"
+  ]
+}
