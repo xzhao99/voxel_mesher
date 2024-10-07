@@ -19,7 +19,6 @@ target_sources(${PROJECT_NAME}
     "${CMAKE_CURRENT_SOURCE_DIR}/pointProcessPipeline.hpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/VoronoiDiagram.h"
     "${CMAKE_CURRENT_SOURCE_DIR}/PlyLoad.h"
-    "${CMAKE_CURRENT_SOURCE_DIR}/targetver.h"
     "${CMAKE_CURRENT_SOURCE_DIR}/trackball.h"    
 #    "${CMAKE_CURRENT_SOURCE_DIR}/View.h"
 )

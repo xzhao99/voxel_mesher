@@ -24,7 +24,7 @@ public:
 
 public:
 
-	void estimateNormal_init(std::string fileNormal_input) {
+	void estimateNormal_init(const std::string& fileNormal_input) {
 
 		fileNormal = fileNormal_input;
 
@@ -434,9 +434,7 @@ private:
 	double maxErrorNormalMeasure(std::vector<std::vector<double>> normalVector1, std::vector<std::vector<double>> normalVector2) {
 
 		if (normalVector1.size() != normalVector2.size()) {
-
-			std::cout << "maxErrorNormalMeasure error! size not equal." << std::endl;
-
+			std::cout << "***Error in " << __func__ << ": size not equal." << std::endl;
 		}
 
 		int singlePointNum = 0;
@@ -495,9 +493,7 @@ private:
 	double aveErrorNormalMeasure(std::vector<std::vector<double>> normalVector1, std::vector<std::vector<double>> normalVector2) {
 
 		if (normalVector1.size() != normalVector2.size()) {
-
-			std::cout << "maxErrorNormalMeasure error! size not equal." << std::endl;
-
+			std::cout << "***Error in " << __func__ << ": size not equal." << std::endl;
 		}
 
 		int singlePointNum = 0;
