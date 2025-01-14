@@ -5,7 +5,12 @@
 https://learn.microsoft.com/en-us/vcpkg/get_started/get-started?pivots=shell-powershell
 ```
 Notes about the four json files:
-1. ```vcpkg.json``` is a manifest file created in your project's directory when you run ```vcpkg new --application and vcpkg add port your_package```. vcpkg reads the manifest file to learn what dependencies to install and integrates with CMake to provide the dependencies required by your project.
+1. ```vcpkg.json``` is a manifest file created in your project's directory when you run
+  ```
+  vcpkg new --application
+  vcpkg add port your_package
+  ```
+vcpkg reads the manifest file to learn what dependencies to install and integrates with CMake to provide the dependencies required by your project.
 
 2. The default ```vcpkg-configuration.json``` file introduces baseline constraints, specifying the minimum versions of dependencies that your project should use. it plays a crucial role in defining version constraints for your project's dependencies. it's a good practice to add vcpkg-configuration.json to your source control to ensure version consistency across different development environments.
 
